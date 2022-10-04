@@ -10,7 +10,7 @@ public class MyFirstAutomationScript {
 
 	System.setProperty("webdriver.chrome.driver","D:\\driver\\chromedriver_win32\\chromedriver.exe");
 	WebDriver driver = new ChromeDriver();
-	driver.get("https://adactinhotelapp.com");
+	driver.navigate().to("https://adactinhotelapp.com");
 	driver.findElement(By.id("username")).sendKeys("riteshmalve1");
 	driver.findElement(By.id("password")).sendKeys("rr25111971");
 	driver.findElement(By.id("login")).click();
