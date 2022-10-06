@@ -18,6 +18,8 @@ public class AlertHandling {
 		driver.findElement(By.id("alertButton")).click();
         Alert myAlert = driver.switchTo().alert();
         System.out.println(myAlert.getText());
+	System.out.println("I am in alert handling code");
+	System.out.println("Adding print statement for new branch");
         myAlert.accept();
 	}
 
